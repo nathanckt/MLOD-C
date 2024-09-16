@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-enum Mois {jan = 1, fev, mars, avr, mai, juin, juil, aout, sept, oct, nov, dec};
+typedef enum {jan = 1, fev, mars, avr, mai, juin, juil, aout, sept, oct, nov, dec} Mois;
 
-struct Date{
+typedef struct DateS{
     int jour; 
-    enum Mois mois; 
+    Mois mois; 
     int annee;
-};
+} Date;
 
-void initialiseDate(struct Date *d){
+void initialiseDate(Date *d){
     int j, a;
-    enum Mois m;
+    Mois m;
     printf("Entrer le jour : ");
     scanf("%d", &j);
     int mois;
     printf("Entrer le mois (1-12) : ");
     scanf("%d", &mois);
-    m = (enum Mois)mois;
+    m = (Mois)mois;
 
     printf("Entrer l'année : ");
     scanf("%d", &a);
@@ -27,7 +27,7 @@ void initialiseDate(struct Date *d){
     d->annee = a;
 }
 
-void afficheDate(struct Date *d){
+void afficheDate( Date *d){
     printf("%d", d->jour);
     printf("/");
 
@@ -37,21 +37,21 @@ void afficheDate(struct Date *d){
     printf("%d", d->annee);
 }
 
-struct Date creerDateParCopie(){
+Date creerDateParCopie(){
     int j, a;
     printf("Entrer le jour : ");
     scanf("%d", &j);
 
-    enum Mois m;
+    Mois m;
     int mois;
     printf("Entrer le mois (1-12) : ");
     scanf("%d", &mois);
-    m = (enum Mois)mois;
+    m = (Mois)mois;
 
     printf("Entrer l'année : ");
     scanf("%d", &a);
 
-    struct Date d; 
+     Date d; 
 
     d.jour = j;
     d.mois = m;
@@ -60,31 +60,22 @@ struct Date creerDateParCopie(){
     return d;
 }
 
-struct Date *newDate(){
-    int j, a;
+Date *newDate(){
+    Date *d = (Date*)malloc(sizeof(Date)); 
     printf("Entrer le jour : ");
-    scanf("%d", &j);
+    scanf("%d", &(d->jour));
 
-    enum Mois m;
-    int mois;
     printf("Entrer le mois (1-12) : ");
-    scanf("%d", &mois);
-    m = (enum Mois)mois;
+    scanf("%d", (int *)&d->mois);
 
     printf("Entrer l'année : ");
-    scanf("%d", &a);
-
-    struct Date *d = (struct Date*)malloc(sizeof(struct Date)); 
-
-    d->jour = j;
-    d->mois = m;
-    d->annee = a;
-
+    scanf("%d", &(d->annee));
+    
     return d;
 }
 
 int main (void){
-    struct Date *date;
+    Date *date;
     date = newDate();
     afficheDate(date);
     //...
