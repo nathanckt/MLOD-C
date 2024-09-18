@@ -4,7 +4,7 @@
 int* repeat(int *t1, int *t2, int taille, int tailleFinale){
 
     int *tab;
-    tab = malloc(tailleFinale);
+    tab = malloc(tailleFinale*sizeof(int));
     int compteur = 0;
 
 
