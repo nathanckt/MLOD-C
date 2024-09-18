@@ -37,4 +37,5 @@ int main(void){
     }
     int *resultat = repeat(tab1, tab2, taille, tailleFinale);
     afficheTab(resultat, tailleFinale);
+    free(*resultat);
 }
