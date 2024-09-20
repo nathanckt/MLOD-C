@@ -17,24 +17,36 @@
 #include <assert.h>
 
 typedef struct gagnantS{
-	int annee;
-	char nom;
-	char nature;
+	unsigned int annee;
+	char *nom; // \0 à la fin
+	char *sujet; // \0 à la fin
 } Gagnant;
 
+typedef struct gagnantsS{
+	Gagnant *gagnants;
+	int nombreGagnants;
+} Gagnants;
+
 int numberOfWinners(FILE *dataFile){
-	int number, countPointVirgule;
-	char caractere;
-	number = 0;
-	while ((caractere = fgetc(dataFile)) != EOF){
-		if(caractere == ';'){
-			countPointVirgule++;
-			if(countPointVirgule == 2){
-				number++;
-			}
-		}
-	}
+	rewind(dataFile);
+	int number, maxline;
+	char *ligne;
+
+	maxline = 2048;
+    ligne = malloc(maxline * sizeof(char));
+
+    number = 0;
+
+    while(fgets(ligne, maxline, dataFile) != NULL) {
+        number++;
+    }
+
+    free(ligne);
 	return number;
+}
+
+void readWinners(FILE *DataFile, Gagnants *listeGagnants){
+
 }
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // MAIN
@@ -60,14 +72,24 @@ int main(int argc, char** argv)
 		return EXIT_FAILURE;
 	}
 	
-	while ((copie = fgetc(dataFile)) != EOF){
-		fputc(copie,outputFile);
+	 while ((copie = fgetc(dataFile)) != EOF){
+	 	fputc(copie,outputFile);
 	}
+	
+	printf("nombre de gagnants : %d \n",numberOfWinners(dataFile));
+
+	//readWinners
+	Gagnants listeGagnants;
+	readWinners(dataFile, &listeGagnants);
+
+	//test-readWinners
+	if(listeGagnants.gagnants[3].nom == "John McCarthy"){
+		printf("c'est stocké avec succès ! \n");
+	}
+
 
 	fclose(dataFile); 
 	fclose(outputFile); 
-
-	printf("nombre de gagnants : %d \n",numberOfWinners(dataFile));
 
 	return EXIT_SUCCESS;
 }
