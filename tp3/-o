@@ -1,0 +1,57 @@
+1966;Alan J. Perlis;Méthodes numériques, systèmes de codage automatique, détection et correction d’erreurs
+1967;Maurice Wilkes;Intelligence artificielle
+1968;Richard Hamming;Analyse numérique, algèbre linéaire, analyse d’erreur vers l’arrière
+1969;Marvin Minsky;Intelligence artificielle
+1970;James H. Wilkinson;Technologie des bases de données
+1971;John McCarthy;Intelligence artificielle, la psychologie de la compréhension humaine, traitement de liste
+1972;Edsger Dijkstra;Machine non déterministe. Voir Machine de Turing non déterministe
+1973;Charles Bachman;Systèmes de programmation de haut niveau, procédures formelles pour la spécification des langages de programmation, langage FORTRAN
+1974;Donald Knuth;Méthodologies pour la création de logiciels efficaces et fiables
+1975;Allen Newell;Langages de programmation et notation mathématique, implémentation de systèmes interactifs, utilisation éducative d’APL, théorie et pratique du langage de programmation
+1976;Michael Rabin;Systèmes de gestion de bases de données, en particulier bases de données relationnelles
+1977;John Backus;Complexité du calcul informatique
+1978;Robert Floyd;Théorie des systèmes d'exploitation, implémentation du système UNIX
+1979;Kenneth Iverson;Développement des langages EULER, Algol W, MODULA et PASCAL
+1980;Charles A. R. Hoare;Théorie des algorithmes, NP-complétude
+1981;Edgar Frank Codd;Création et analyse de structures de données
+1982;Stephen Cook;Conception assistée par ordinateur (CAO)
+1983;Kenneth Thompson;Analyse numérique
+1984;Niklaus Wirth;Applications réparties, création de CTSS et Multics
+1985;Richard Karp;Logique pour fonctions calculable, ML, Calculus of communicating systems
+1986;John Hopcroft;Environnements personnels distribués
+1987;John Cocke;Théorie de la complexité
+1988;Ivan Sutherland;Systèmes d’intelligence artificielle de grande envergure
+1989;William Kahan;Théorie de la complexité appliquée à la cryptographie et à la vérification de programmes
+1990;Fernando Corbató;Logique temporelle et vérification de programmes et de systèmes
+1991;Robin Milner;Informatique interactive
+1992;Butler Lampson;Bases de données et traitement de transactions
+1993;Juris Hartmanis;Architecture des ordinateurs, systèmes d’exploitation et logiciels
+1994;Edward Feigenbaum;Théorie de la calculabilité, génération de nombres pseudo-aléatoires, cryptographie et complexité de la communication
+1995;Manuel Blum;Programmation orientée objet et création des langages Simula I et Simula 67
+1996;Amir Pnueli;Cryptographie à clef publique et système RSA
+1997;Douglas Engelbart;Réseaux, TCP/IP
+1998;James Gray;Pour des contributions fondamentales à la conception des langages de programmation et à la définition d'Algol 60, pour la conception des compilateurs et pour l'art et la pratique de la programmation informatique
+1999;Frederick Brooks;Optimisation des compilateurs
+2000;Andrew Yao;Pour leurs travaux sur le model checking
+2001;Ole-Johan Dahl;Pour la conception de langages de programmation et la méthodologie polymorphe
+2002;Ronald L. Rivest;Programmation orientée objet et création du langage Smalltalk
+2003;Alan Kay;Pour le travail effectué tout au long de sa carrière dont le Xerox Alto
+2004;Vinton G. Cerf;Pour le travail en apprentissage, en théorie de la complexité, en calcul distribué et parallèle
+2005;Peter Naur;Pour des contributions fondamentales à l'intelligence artificielle par le développement de l'analyse probabiliste et du raisonnement causal
+2006;Frances Allen;Pour cryptologie et la vérification de preuve, basés de la théorie de la complexité
+2007;Edmund M. Clarke, Allen Emerson et Joseph Sifakis;Bibliothèque logicielle
+2008;Barbara Liskov;Théorie des compilateurs, architecture des grands systèmes, invention des architectures RISC
+2009;Charles P. Thacker;La science et l’art des langages de programmation, langage ALGOL
+2010;Leslie Valiant;Analyse des algorithmes et conception des langages de programmation
+2011;Judea Pearl;Construction de compilateurs
+2012;Silvio Micali et Shafi Goldwasser;Définition et conception des langages de programmation
+2013;Leslie Lamport;Contributions fondamentales théoriques appliquées aux systèmes distribués et concurrents - concepts de causalité, d'horloges logiques et de consistance séquentielle
+2014;Michael Stonebraker;Pour l'invention, la normalisation et la commercialisation d'Ethernet
+2015;Whitfield Diffie et Martin Hellman;Contributions aux systèmes de gestions de bases de données (SGBD) et inventeur de PostgreSQL
+2016;Tim Berners-Lee;Contributions à la cryptographie contemporaine (créateurs de la cryptographie asymétrique)
+2017;David Patterson et John Hennessy;Inventeur du World Wide Web et du premier navigateur web
+2018;Yann Le Cun, Yoshua Bengio et Geoffrey Hinton;Approche systématique et quantitative de la conception et de l'évaluation d'architectures informatiques ayant un impact durable sur l'industrie des microprocesseurs
+2019;Patrick Hanrahan et Edwin Catmull;Réseaux neuronaux profonds (IA)
+2020;Alfred Aho et Jeffrey Ullman;Contributions fondamentales à l'infographie tridimensionnelle
+2021;Jack Dongarra;Algorithmes fondamentaux et la théorie sous-jacente à l'implémentation des langages de programmation
+2022;Robert Metcalfe;Contributions innovantes dans les algorithmes et bibliothèques numériques le calcul haute performance
