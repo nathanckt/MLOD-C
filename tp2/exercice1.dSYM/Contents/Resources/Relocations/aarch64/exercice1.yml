@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     exercice1
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _echangeContenu, symObjAddr: 0x0, symBinAddr: 0x100003750, symSize: 0x1D4 }
+  - { offsetInCU: 0x3B, offset: 0x3B, size: 0x8, addend: 0x0, symName: _.str, symObjAddr: 0x620, symBinAddr: 0x100003DE0, symSize: 0x0 }
+  - { offsetInCU: 0x5E, offset: 0x5E, size: 0x8, addend: 0x0, symName: _echangeContenu, symObjAddr: 0x0, symBinAddr: 0x100003750, symSize: 0x1D4 }
+  - { offsetInCU: 0x9E, offset: 0x9E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1D4, symBinAddr: 0x100003924, symSize: 0x3A4 }
+...
