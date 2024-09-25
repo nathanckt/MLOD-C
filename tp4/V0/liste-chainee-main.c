@@ -1,4 +1,5 @@
 // gcc -W -Wall -std=c99 liste-chainee.c liste-chainee-main.c -o liste-chaine-main
+// gcc -W -Wall -fsanitize=address -g -std=c99 liste-chainee.c liste-chainee-main.c -o liste-chaine-main
 // gcc -W -Wall -Wno-unused-parameter -std=c99 liste-chainee.c liste-chainee-main.c -o liste-chaine-main
 
 #include "liste-chainee.h"
@@ -12,6 +13,7 @@ int main(void){
 	printf("estVide(l) = %s\n",estVide(l)?"TRUE":"FALSE");
 
 	l = ajoutTete(1,l);
+	printf("estVide(l) = %s\n",estVide(l)?"TRUE":"FALSE");
 	l = ajoutTete(2,l);
 	l = ajoutTete(4,l);
 	l = ajoutTete(1,l);
@@ -22,8 +24,9 @@ int main(void){
 	l = ajoutTete(1,l);
 
 	afficheListe_i(l);
+	afficheListe_r(l);
 
-	ajoutFin_r(99,l);
+	ajoutFin_i(99,l);
 	afficheListe_i(l);
 
 	ajoutFin_r(100,l);
@@ -78,6 +81,7 @@ int main(void){
 	afficheListe_r(l);
 
 	detruire_r(l);
+	l=NULL;
 
 	return EXIT_SUCCESS;
 }
