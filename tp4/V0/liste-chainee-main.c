@@ -80,6 +80,9 @@ int main(void){
 	l = retirePremier_r(99,l);
 	afficheListe_r(l);
 
+	printf("afficheEnvers_r(l)  : ");
+	afficheEnvers_r(l);
+
 	detruire_r(l);
 	l=NULL;
 

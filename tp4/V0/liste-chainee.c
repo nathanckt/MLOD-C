@@ -153,7 +153,7 @@ Liste retirePremier_i(Element v, Liste l) {
 
 	Liste precedent=l;
 	p =l->suiv;
-	while(estVide(p) && !equalsElement(p->val,v)){
+	while(!estVide(p) && !equalsElement(p->val,v)){
 		precedent = p;
 		p = p->suiv;
 	}
@@ -169,22 +169,27 @@ Liste retirePremier_i(Element v, Liste l) {
 
 // version recursive
 Liste retirePremier_r(Element v, Liste l) {
-	if(l!=NULL){
-		return NULL;
-	}
-	if(equalsElement(l->val,v)){
-		Liste temp =l->suiv;
-		l->suiv =NULL;
-		detruire_i(l);
-		return temp;
-	}
-	l->suiv =retirePremier_r(v, l->suiv);
-	return l;
+	if(l == NULL) {
+        return NULL;
+    }
+    if(equalsElement(l->val, v)) {
+        Liste temp = l->suiv;
+        l->suiv = NULL;
+        detruireElement(l->val);  // Ajoute la destruction de l'élément
+        free(l);  // Libère la mémoire de l'élément supprimé
+        return temp;
+    }
+    l->suiv = retirePremier_r(v, l->suiv);
+    return l;
 }
 
 
 void afficheEnvers_r(Liste l) {
-	TODO;
+	if (l == NULL) {
+        return;
+    }
+    afficheEnvers_r(l->suiv); 
+    afficheElement(l->val);
 }
 
 
