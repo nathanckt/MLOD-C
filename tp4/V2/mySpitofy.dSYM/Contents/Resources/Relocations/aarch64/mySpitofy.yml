@@ -1,0 +1,33 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     mySpitofy
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _estVide, symObjAddr: 0x0, symBinAddr: 0x1000016B0, symSize: 0x20 }
+  - { offsetInCU: 0x3B, offset: 0x3B, size: 0x8, addend: 0x0, symName: _.str, symObjAddr: 0x1500, symBinAddr: 0x100003780, symSize: 0x0 }
+  - { offsetInCU: 0x5E, offset: 0x5E, size: 0x8, addend: 0x0, symName: _estVide, symObjAddr: 0x0, symBinAddr: 0x1000016B0, symSize: 0x20 }
+  - { offsetInCU: 0x86, offset: 0x86, size: 0x8, addend: 0x0, symName: _creer, symObjAddr: 0x20, symBinAddr: 0x1000016D0, symSize: 0x90 }
+  - { offsetInCU: 0xBD, offset: 0xBD, size: 0x8, addend: 0x0, symName: _ajoutTete, symObjAddr: 0xB0, symBinAddr: 0x100001760, symSize: 0x27C }
+  - { offsetInCU: 0x105, offset: 0x105, size: 0x8, addend: 0x0, symName: _afficheListe_i, symObjAddr: 0x32C, symBinAddr: 0x1000019DC, symSize: 0x28C }
+  - { offsetInCU: 0x12A, offset: 0x12A, size: 0x8, addend: 0x0, symName: _afficheListe_r, symObjAddr: 0x5B8, symBinAddr: 0x100001C68, symSize: 0x28C }
+  - { offsetInCU: 0x14F, offset: 0x14F, size: 0x8, addend: 0x0, symName: _detruire_i, symObjAddr: 0x844, symBinAddr: 0x100001EF4, symSize: 0x294 }
+  - { offsetInCU: 0x183, offset: 0x183, size: 0x8, addend: 0x0, symName: _detruire_r, symObjAddr: 0xAD8, symBinAddr: 0x100002188, symSize: 0x284 }
+  - { offsetInCU: 0x1A8, offset: 0x1A8, size: 0x8, addend: 0x0, symName: _ajoutFin_i, symObjAddr: 0xD5C, symBinAddr: 0x10000240C, symSize: 0x390 }
+  - { offsetInCU: 0x1FF, offset: 0x1FF, size: 0x8, addend: 0x0, symName: _ajoutFin_r, symObjAddr: 0x10EC, symBinAddr: 0x10000279C, symSize: 0x36C }
+  - { offsetInCU: 0x26, offset: 0x31A, size: 0x8, addend: 0x0, symName: _afficheElement, symObjAddr: 0x0, symBinAddr: 0x100002BA0, symSize: 0x2EC }
+  - { offsetInCU: 0x3B, offset: 0x32F, size: 0x8, addend: 0x0, symName: _.str, symObjAddr: 0xAC0, symBinAddr: 0x1000037A0, symSize: 0x0 }
+  - { offsetInCU: 0x66, offset: 0x35A, size: 0x8, addend: 0x0, symName: _.str.1, symObjAddr: 0xAE0, symBinAddr: 0x1000037C0, symSize: 0x0 }
+  - { offsetInCU: 0x83, offset: 0x377, size: 0x8, addend: 0x0, symName: _.str.2, symObjAddr: 0xB00, symBinAddr: 0x1000037E0, symSize: 0x0 }
+  - { offsetInCU: 0xA0, offset: 0x394, size: 0x8, addend: 0x0, symName: _.str.3, symObjAddr: 0xB20, symBinAddr: 0x100003800, symSize: 0x0 }
+  - { offsetInCU: 0xBD, offset: 0x3B1, size: 0x8, addend: 0x0, symName: _.str.4, symObjAddr: 0xB40, symBinAddr: 0x100003820, symSize: 0x0 }
+  - { offsetInCU: 0xCE, offset: 0x3C2, size: 0x8, addend: 0x0, symName: _.str.5, symObjAddr: 0xB60, symBinAddr: 0x100003840, symSize: 0x0 }
+  - { offsetInCU: 0xEB, offset: 0x3DF, size: 0x8, addend: 0x0, symName: _.str.6, symObjAddr: 0xBA0, symBinAddr: 0x100003880, symSize: 0x0 }
+  - { offsetInCU: 0x108, offset: 0x3FC, size: 0x8, addend: 0x0, symName: _.str.7, symObjAddr: 0xBE0, symBinAddr: 0x1000038C0, symSize: 0x0 }
+  - { offsetInCU: 0x119, offset: 0x40D, size: 0x8, addend: 0x0, symName: _.str.8, symObjAddr: 0xC00, symBinAddr: 0x1000038E0, symSize: 0x0 }
+  - { offsetInCU: 0x12A, offset: 0x41E, size: 0x8, addend: 0x0, symName: _.str.9, symObjAddr: 0xC20, symBinAddr: 0x100003900, symSize: 0x0 }
+  - { offsetInCU: 0x13B, offset: 0x42F, size: 0x8, addend: 0x0, symName: _.str.10, symObjAddr: 0xC40, symBinAddr: 0x100003920, symSize: 0x0 }
+  - { offsetInCU: 0x151, offset: 0x445, size: 0x8, addend: 0x0, symName: _afficheElement, symObjAddr: 0x0, symBinAddr: 0x100002BA0, symSize: 0x2EC }
+  - { offsetInCU: 0x176, offset: 0x46A, size: 0x8, addend: 0x0, symName: _detruireElement, symObjAddr: 0x2EC, symBinAddr: 0x100002E8C, symSize: 0x10 }
+  - { offsetInCU: 0x19B, offset: 0x48F, size: 0x8, addend: 0x0, symName: _numberOfMusic, symObjAddr: 0x2FC, symBinAddr: 0x100002E9C, symSize: 0xA4 }
+  - { offsetInCU: 0x1ED, offset: 0x4E1, size: 0x8, addend: 0x0, symName: _readMusic, symObjAddr: 0x3A0, symBinAddr: 0x100002F40, symSize: 0x644 }
+  - { offsetInCU: 0x2A9, offset: 0x59D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x9E4, symBinAddr: 0x100003584, symSize: 0x40 }
+...
