@@ -24,10 +24,6 @@ Liste ajoutTete(Element v, Liste l) {
 	return newListe;
 }
 
-// // e doit être un entier
-// void afficheElement(Element e) {
-// 	printf("%i ",e); 
-// }
 
 // affiche tous les éléments de la liste l
 // Attention, cette fonction doit être indépendante du type des éléments de la liste
@@ -108,10 +104,6 @@ Liste ajoutFin_r(Element v, Liste l) {
 	}
 }
 
-// compare deux elements
-bool equalsElement(Element e1, Element e2){
-	return e1 == e2;
-}
 
 // Retourne un pointeur sur l'élément de la liste l contenant la valeur v ou NULL
 // version itérative
