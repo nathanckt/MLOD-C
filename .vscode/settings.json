@@ -2,6 +2,7 @@
     "files.associations": {
         "exercice2.C": "cpp",
         "stdlib.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "linkedlistofmusic.h": "c"
     }
 }

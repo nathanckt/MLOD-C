@@ -12,7 +12,7 @@ struct music_s{
     unsigned int year;
 };
 
-typedef struct music_s Element;
+typedef struct music_s *Element;
 
 struct cellule_s {
 	Element val;
@@ -32,7 +32,7 @@ Liste creer(Element v);
 // ajoute l'élément v en tete de la liste l
 Liste ajoutTete(Element v, Liste l);
 
-void afficheElement(Element e);
+extern void afficheElement(Element e);
 
 // affiche tous les éléments de la liste l
 // Attention, cette fonction doit être indépendante du type des éléments de la liste
@@ -44,7 +44,9 @@ void afficheListe_i(Liste l);
 // version recursive
 void afficheListe_r(Liste l);
 
-void detruireElement(Element e);
+extern void detruireElement(Element e);
+
+extern bool equalsElement(Element e1, Element e2);
 
 // Détruit tous les éléments de la liste l
 // version itérative
