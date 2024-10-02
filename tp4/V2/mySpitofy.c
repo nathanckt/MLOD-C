@@ -30,12 +30,13 @@ bool equalsElement(Element e1, Element e2){
 }
 
 
-void readMusic(char *filename, Liste l){
+Liste readMusic(char *filename, Liste l){
     FILE *dataFile = fopen(filename,"r");
 
     int maxline = 2048;
     char *ligne;
     ligne = malloc(maxline * sizeof(char));
+    fgets(ligne, maxline, dataFile); // Passe la première ligne
 
     while(fgets(ligne, maxline, dataFile) != NULL) {
         Element newElement;
@@ -44,55 +45,41 @@ void readMusic(char *filename, Liste l){
 			char *token;
 
 			token = strtok(ligne, ",");
-			newElement->name = strdup(token);
-            
-            token = strtok(NULL, ",");
-			newElement->artist = strdup(token);
+            if (token != NULL) newElement->name = strdup(token);
 
             token = strtok(NULL, ",");
-			newElement->album = strdup(token);
+            if (token != NULL) newElement->artist = strdup(token);
 
             token = strtok(NULL, ",");
-			newElement->genre = strdup(token);
+            if (token != NULL) newElement->album = strdup(token);
 
             token = strtok(NULL, ",");
-			newElement->discNumber = atoi(token);
+            if (token != NULL) newElement->genre = strdup(token);
 
             token = strtok(NULL, ",");
-			newElement->trackNumber = atoi(token);
+            if (token != NULL) newElement->discNumber = atoi(token);
+
+            token = strtok(NULL, ",");
+            if (token != NULL) newElement->trackNumber = atoi(token);
 
             token = strtok(NULL, "\n");
-			newElement->year = atoi(token);
+            if (token != NULL) newElement->year = atoi(token);
 
-            ajoutFin_i(newElement, l);
+            l = ajoutFin_i(newElement, l);
 
 		}
     }
     free(ligne);
+    return l;
 }
 
 int main(void){
     char *dataFile;
     dataFile = "music.csv";
 
-    //Test Affichage Struct
-
-    Element chanson;
-    chanson = malloc(sizeof(struct music_s));
-    chanson->name = "Yolo";
-    chanson->album = "Super Album";
-    chanson->artist = "Mec super";
-    chanson->discNumber = 12;
-    chanson->trackNumber = 2;
-    chanson->year = 2012;
-    chanson->genre = "Pop";
-
-    afficheElement(chanson);
-    free(chanson);
-
     Liste l;
     l = NULL;
-    readMusic(dataFile,l);
+    l = readMusic(dataFile,l);
     afficheListe_i(l);
     return 0;
 }
